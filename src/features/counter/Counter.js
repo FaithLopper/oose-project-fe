@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
-  increment,
+  incrementttt,
   incrementByAmount,
   incrementAsync,
   incrementIfOdd,
@@ -31,18 +31,13 @@ export function Counter() {
         <button
           className={styles.button}
           aria-label="Increment value"
-          onClick={() => dispatch(increment())}
+          onClick={() => dispatch(incrementttt())}
         >
           +
         </button>
       </div>
       <div className={styles.row}>
-        <input
-          className={styles.textbox}
-          aria-label="Set increment amount"
-          value={incrementAmount}
-          onChange={(e) => setIncrementAmount(e.target.value)}
-        />
+
         <button
           className={styles.button}
           onClick={() => dispatch(incrementByAmount(incrementValue))}
